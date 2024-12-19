@@ -119,12 +119,12 @@ To use this repository with Docker:
     cd pathogenicity-benchmark
     ```
 
-    2. Install the required dependencies as described in the [Prerequisites](#prerequisites) section.
-    3. Run the benchmark script with the required input files:
+2. Install the required dependencies as described in the [Prerequisites](#prerequisites) section.
+3. Run the benchmark script with the required input files:
 
-    ```bash
-    python sankey_diagram.py
-    ```
+   ```bash
+   python sankey_diagram.py
+   ```
 
 ### Running with Docker
 
@@ -142,7 +142,7 @@ The output files are saved in the `data/output` directory:
 ### Sankey Diagrams
 
 Illustrates transitions between truthset pathogenicity categories and platform predictions.
-Example: [sankey_diagram.png](https://drive.google.com/file/d/1rSRh65TstpZkiQBM9LlE-zVP-RS0ROT1/view?usp=sharing).
+Example: [sankey_diagram.pdf](https://drive.google.com/file/d/1rSRh65TstpZkiQBM9LlE-zVP-RS0ROT1/view?usp=sharing).
 
 ### Radar Charts
 
