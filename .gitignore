@@ -1,0 +1,8 @@
+# system folders
+.idea
+
+# local outputs
+/data/output/
+
+# local logs
+/data/logs/
