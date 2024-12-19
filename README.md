@@ -73,13 +73,12 @@ Install the dependencies as follows:
 
 To use this repository with Conda:
 
-1. Install [Miniconda or Anaconda](https://docs.anaconda.com/).
-2. Create a new Conda environment with Python 3.10:
+1. Create a new Conda environment with Python 3.10:
     ```bash
     conda create -n pathogenicity-benchmark python=3.10
     conda activate pathogenicity-benchmark
     ```
-3. Install the required packages using:
+2. Install the required packages using:
     ```bash
     conda install --file requirements.txt
     ```
@@ -88,8 +87,7 @@ To use this repository with Conda:
 
 To use this repository with Docker:
 
-1. Install [Docker](https://www.docker.com/) on your system.
-2. Build the Docker image using the provided `Dockerfile`:
+1. Build the Docker image using the provided `Dockerfile`:
 
     ```bash
     docker build -t pathogenicity-benchmark .
@@ -111,16 +109,8 @@ To use this repository with Docker:
 
 ### Running locally
 
-1. Clone the repository:
-
-    ```bash
-    git clone
-   
-    cd pathogenicity-benchmark
-    ```
-
-2. Install the required dependencies as described in the [Prerequisites](#prerequisites) section.
-3. Run the benchmark script with the required input files:
+1. Install the required dependencies as described in the [Prerequisites](#prerequisites) section.
+2. Run the benchmark script with the required input files:
 
    ```bash
    python sankey_diagram.py
@@ -142,15 +132,20 @@ The output files are saved in the `data/output` directory:
 ### Sankey Diagrams
 
 Illustrates transitions between truthset pathogenicity categories and platform predictions.
-Example: [sankey_diagram.pdf](https://drive.google.com/file/d/1rSRh65TstpZkiQBM9LlE-zVP-RS0ROT1/view?usp=sharing).
+
+Example:
+<img src="https://drive.google.com/uc?id=13zEBFMnlrzUNYExiopEycN02oAKyenE5" alt="Sankey Diagram" width="1280"/>
 
 ### Radar Charts
 
 Visualizes F1, precision, and recall metrics for the five-tier or three-tier models.
-Example: [radar_chart.pdf](https://drive.google.com/file/d/1gHpmMrpZ8ktnUwKOfeQCe6pxMLTMZ1pZ/view?usp=sharing).
+
+Example:
+<img src="https://drive.google.com/uc?id=12YPVM09mB6g_LWYKSaSWokbJd_MWElEm" alt="Radar Chart" width="1280"/>
 
 ## Statistical Analysis
 
 Metrics such as F1, precision, and recall are calculated for each pathogenicity tier. The results are stored in TSV
 files for easy access and interpretation.
+
 Example: [cmpetitor.tsv](https://drive.google.com/file/d/1zPpcYsv3A_1QacJv9mUNM8vdQT4ZiptN/view?usp=sharing).
